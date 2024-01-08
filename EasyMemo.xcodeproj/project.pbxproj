@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8234D1072B4BD8320096CCFE /* EasyMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1062B4BD8320096CCFE /* EasyMemoApp.swift */; };
 		8234D1092B4BD8320096CCFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1082B4BD8320096CCFE /* ContentView.swift */; };
-		8234D10B2B4BD8320096CCFE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D10A2B4BD8320096CCFE /* Item.swift */; };
 		8234D10D2B4BD8330096CCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8234D10C2B4BD8330096CCFE /* Assets.xcassets */; };
 		8234D1102B4BD8330096CCFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8234D10F2B4BD8330096CCFE /* Preview Assets.xcassets */; };
 		8234D11A2B4BD8340096CCFE /* EasyMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1192B4BD8340096CCFE /* EasyMemoTests.swift */; };
 		8234D1242B4BD8340096CCFE /* EasyMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1232B4BD8340096CCFE /* EasyMemoUITests.swift */; };
 		8234D1262B4BD8340096CCFE /* EasyMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1252B4BD8340096CCFE /* EasyMemoUITestsLaunchTests.swift */; };
+		8234D1352B4BD8CC0096CCFE /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1342B4BD8CC0096CCFE /* Memo.swift */; };
+		8234D1382B4BD96E0096CCFE /* MemoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1372B4BD96E0096CCFE /* MemoListScreen.swift */; };
+		8234D13A2B4BDB980096CCFE /* AddMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D1392B4BDB980096CCFE /* AddMemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		8234D1032B4BD8320096CCFE /* EasyMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8234D1062B4BD8320096CCFE /* EasyMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMemoApp.swift; sourceTree = "<group>"; };
 		8234D1082B4BD8320096CCFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8234D10A2B4BD8320096CCFE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8234D10C2B4BD8330096CCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8234D10F2B4BD8330096CCFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8234D1152B4BD8340096CCFE /* EasyMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,9 @@
 		8234D11F2B4BD8340096CCFE /* EasyMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8234D1232B4BD8340096CCFE /* EasyMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMemoUITests.swift; sourceTree = "<group>"; };
 		8234D1252B4BD8340096CCFE /* EasyMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8234D1342B4BD8CC0096CCFE /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		8234D1372B4BD96E0096CCFE /* MemoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScreen.swift; sourceTree = "<group>"; };
+		8234D1392B4BDB980096CCFE /* AddMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,11 @@
 		8234D1052B4BD8320096CCFE /* EasyMemo */ = {
 			isa = PBXGroup;
 			children = (
+				8234D13B2B4C19AC0096CCFE /* Domains */,
+				8234D1362B4BD9570096CCFE /* Screens */,
+				8234D1322B4BD89C0096CCFE /* Views */,
 				8234D1062B4BD8320096CCFE /* EasyMemoApp.swift */,
 				8234D1082B4BD8320096CCFE /* ContentView.swift */,
-				8234D10A2B4BD8320096CCFE /* Item.swift */,
 				8234D10C2B4BD8330096CCFE /* Assets.xcassets */,
 				8234D10E2B4BD8330096CCFE /* Preview Content */,
 			);
@@ -128,6 +134,38 @@
 				8234D1252B4BD8340096CCFE /* EasyMemoUITestsLaunchTests.swift */,
 			);
 			path = EasyMemoUITests;
+			sourceTree = "<group>";
+		};
+		8234D1322B4BD89C0096CCFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8234D1392B4BDB980096CCFE /* AddMemoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8234D1362B4BD9570096CCFE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8234D1372B4BD96E0096CCFE /* MemoListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8234D13B2B4C19AC0096CCFE /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				8234D13C2B4C19B60096CCFE /* Memo */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		8234D13C2B4C19B60096CCFE /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				8234D1342B4BD8CC0096CCFE /* Memo.swift */,
+			);
+			path = Memo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8234D1092B4BD8320096CCFE /* ContentView.swift in Sources */,
-				8234D10B2B4BD8320096CCFE /* Item.swift in Sources */,
+				8234D13A2B4BDB980096CCFE /* AddMemoView.swift in Sources */,
+				8234D1382B4BD96E0096CCFE /* MemoListScreen.swift in Sources */,
 				8234D1072B4BD8320096CCFE /* EasyMemoApp.swift in Sources */,
+				8234D1352B4BD8CC0096CCFE /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
